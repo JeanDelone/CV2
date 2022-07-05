@@ -31,6 +31,9 @@ merged_blue = cv.merge([b, blank, blank])
 merged_green = cv.merge([blank, g, blank])
 merged_red = cv.merge([blank, blank, r])
 
+merged2 = cv.merge([merged_blue, merged_green, merged_red])
+cv.imshow("merged", merged2)
+
 cv.imshow("merged_blue", merged_blue)
 cv.imshow("merged_green", merged_green)
 cv.imshow("merged_red", merged_red)
