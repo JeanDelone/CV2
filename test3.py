@@ -3,8 +3,7 @@ import numpy as np
 
 capture = cv.VideoCapture(0)
 
-_, frame = capture.read()
-blank = np.zeros(frame.shape[:2], dtype="uint8")
+blank = np.zeros(capture.read()[1].shape[:2], dtype="uint8")
 
 while True:
     _, frame = capture.read()
